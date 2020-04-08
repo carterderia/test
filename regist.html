@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>註冊頁面</title>
+    <style>
+        #d1{
+            width: 250px;
+            position: relative;
+            margin: 40px 420px;
+            border: 1px solid #ddd;
+            padding-top: 20px;
+            overflow: hidden;
+        }
+
+        .form_set>p, div{
+            float:left;
+            box-sizing: border-box;
+        }
+        .form_set>p{
+            width: 80px;
+            height: 30px;
+            margin: 0px;
+            text-align: center;
+        }
+        .form_set > div{
+            width: 150px;
+            height: 45px;
+
+        }
+        .form_set input{
+            height: 25px;
+            outline: none;
+            border-radius: 3px;
+
+        }
+        .form_set .btn{
+            width: 65px;
+            height: 25px;
+            font-size: 16px;
+            color: #fff;
+            background-color: #64a131;
+            outline: none;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div id="d1">
+        <form method="post" action="#">
+            <div class="form_set">
+                <p>用户名</p>
+                <div><input type="text" name="uname"></div>
+            </div>
+            <div  class="form_set">
+                <p>密码</p>
+                <div> <input type="password" name="upwd"></div>
+            </div>
+            <div  class="form_set">
+                <p>頭像</p>
+                <div><input type="file" name="ufile"></div>
+            </div>
+            <div  class="form_set">
+                <p>城市</p>
+                <div>
+                    <select>
+                        <option value="1">台北</option>
+                        <option value="2">高雄</option>
+                        <option value="3">板橋</option>
+                        <option value="4">台中</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form_set">
+                <p></p>
+                <div>
+                    <input type="reset" value="重置" class="btn">
+                    <input type="submit" value="註冊" class="btn">
+                </div>
+            </div>
+
+        </form>
+    </div>
+</body>
