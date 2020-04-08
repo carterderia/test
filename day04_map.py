@@ -44,3 +44,11 @@ print(sum(map(lambda x: x**3, range(1, 5+1))))
 print(sum(map(pow, range(1, 4+1), range(1, 4+1))))
 print(sum(map(lambda x: x**x, range(1, 4+1))))
 
+# 階層, 4! = 4*3*2*1 = 24
+def mylel(x):
+    if x == 1: # 設置遞歸終點
+        return 1
+    return x * mylel(x-1)      
+
+print(mylel(5))
+
